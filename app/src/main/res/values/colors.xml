@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_green">#D856FF82</color>
+    <color name="purple_200">#98FC86</color>
+    <color name="purple_500">#EE0000</color>
+    <color name="green">#3FEE00</color>
+    <color name="red">#EE0000</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="mtrl_textinput_default_box_stroke_color">#fff</color>
+    <color name="tag_1">#f2b25c</color>
+    <color name="tag_2">#5598df</color>
+    <color name="tag_3">#f06d65</color>
+    <color name="tag_4">#7c72dc</color>
+    <color name="tag_5">#56c2b8</color>
+    <color name="chip_color">#202020</color>
+    <color name="chip_color_Stroke">#575757</color>
+    <color name="color_choice_chip_background_color">
+        <selector
+            xmlns:android="http://schemas.android.com/apk/res/android">
+            <!-- 24% opacity -->
+            <item android:alpha="0.24" android:color="@color/main_green" android:state_enabled="true" android:state_selected="true"/>
+            <item android:alpha="0.24" android:color="@color/main_green" android:state_enabled="true" android:state_checked="true"/>
+            <!-- 12% of 87% opacity -->
+            <item android:alpha="0.10" android:color="#FFF" android:state_enabled="true"/>
+            <item android:alpha="0.12" android:color="#FFF"/>
+        </selector>
+    </color>
+
+    <color name="color_choice_chip_strokecolor_selector">
+        <selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <item android:color="@color/main_green" android:state_enabled="true" android:state_selected="true"/>
+            <item android:color="@color/main_green" android:state_enabled="true" android:state_checked="true"/>
+            <!-- 87% opacity. -->
+            <item android:alpha="0.87" android:color="#C6CCCD" android:state_enabled="true"/>
+            <!-- 38% of 87% opacity. -->
+            <item android:alpha="0.33" android:color="#C6CCCD"/>
+
+        </selector>
+    </color>
+
+    <color name="color_choice_chip_text_color">
+        <selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <item android:color="@color/main_green" android:state_enabled="true" android:state_selected="true"/>
+            <item android:color="@color/main_green" android:state_enabled="true" android:state_checked="true"/>
+            <!-- 87% opacity. -->
+            <item android:alpha="0.87" android:color="#C6CCCD" android:state_enabled="true"/>
+            <!-- 38% of 87% opacity. -->
+            <item android:alpha="0.33" android:color="#C6CCCD"/>
+
+        </selector>
+    </color>
+
+    <color name="color_choice_chip_text_color_disabled">
+        <selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <item android:color="#575757" android:state_enabled="false" android:state_selected="false"/>
+            <item android:color="#575757" android:state_enabled="false" android:state_checked="false"/>
+            <!-- 87% opacity. -->
+            <item android:alpha="0.87" android:color="#575757" android:state_enabled="false"/>
+            <!-- 38% of 87% opacity. -->
+            <item android:alpha="0.33" android:color="#575757"/>
+
+        </selector>
+    </color>
+
+
+    <!--main elements colors
+        CRUCIAL:
+        GENERAL:
+        FUTURE:
+        SEEN:
+        -->
+    <color name="released">#DA8340</color>
+    <color name="to_released">#4EA8E4</color>
+</resources>

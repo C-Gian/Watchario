@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="ring">
+    <!-- Set the inner radius to 0dp to create a full circle -->
+    <innerRadius android:width="0dp" />
+    <solid android:color="#FF0000" />
+</shape>

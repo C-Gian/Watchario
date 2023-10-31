@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "336646320040",
+    "firebase_url": "https://rememberapp-13f74-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "rememberapp-13f74",
+    "storage_bucket": "rememberapp-13f74.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:336646320040:android:29d52e604b3d507513f79d",
+        "android_client_info": {
+          "package_name": "com.example.rememberme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "336646320040-ip0afd4ehe480knmghgdch60i28qh9fj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFd-UXuHDCUy8nDHNC6JzY9srZa83SMuQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "336646320040-ip0afd4ehe480knmghgdch60i28qh9fj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#131313"
+    tools:context=".AddActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="9dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/add_header_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/add_backarrow"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="#00000000"
+                android:clickable="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/back_arrow_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></ImageButton>
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/futura_heavy"
+                android:text="Add Element"
+                android:textColor="@color/white"
+                android:textSize="40sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.shuhart.stepview.StepView
+            android:id="@+id/step_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_header_container"
+            app:sv_animationType="All"
+            app:sv_doneCircleColor="#D856FF82"
+            app:sv_doneCircleRadius="12dp"
+            app:sv_doneStepLineColor="#D856FF82"
+            app:sv_doneStepMarkColor="@color/white"
+            app:sv_nextStepLineColor="#4DFFFFFF"
+            app:sv_nextTextColor="#FFFFFF"
+            app:sv_selectedCircleColor="#D856FF82"
+            app:sv_selectedCircleRadius="12dp"
+            app:sv_selectedStepNumberColor="#FFFFFF"
+            app:sv_selectedTextColor="#FFFFFF"
+            app:sv_stepLineWidth="1dp"
+            app:sv_stepNumberTextSize="12sp"
+            app:sv_stepPadding="5dp"
+            app:sv_typeface="@font/futura_book" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/add_image_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@+id/step_view">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/futura_book"
+                android:text="Add Image"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="125dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView13">
+
+                <ImageView
+                    android:id="@+id/element_image_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/default_image"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+                <LinearLayout
+                    android:id="@+id/add_image_text_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/shape"
+                    app:layout_constraintBottom_toBottomOf="@+id/element_image_add"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/element_image_add">
+
+                    <TextView
+                        android:id="@+id/add_text_imageview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/element_image_add"
+                        android:layout_alignTop="@+id/element_image_add"
+                        android:layout_alignRight="@+id/element_image_add"
+                        android:layout_alignBottom="@+id/element_image_add"
+                        android:layout_margin="1dp"
+                        android:fontFamily="@font/futura_book"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="Insert Image Here"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/add_type_time_date_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step_view">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/add_type_time_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textinputlayout_autocomplete_type"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:background="#00FFFFFF"
+                    android:hint="@string/select_dropdown_add_type"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.5">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/element_dropdown_add_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#00131313"
+                        android:fontFamily="@font/futura_book"
+                        android:inputType="none"
+                        app:layout_constraintBottom_toBottomOf="@+id/textinputlayout_autocomplete_type"
+                        app:layout_constraintEnd_toEndOf="@+id/textinputlayout_autocomplete_type"
+                        app:layout_constraintStart_toStartOf="@+id/textinputlayout_autocomplete_type"
+                        app:layout_constraintTop_toTopOf="@+id/textinputlayout_autocomplete_type"></AutoCompleteTextView>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textinputlayout_autocomplete_time"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:background="#002E343D"
+                    android:hint="@string/select_dropdown_add_time"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.5">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/element_dropdown_add_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#131313"
+                        android:fontFamily="@font/futura_book"
+                        android:inputType="none"
+                        app:layout_constraintBottom_toBottomOf="@+id/textinputlayout_autocomplete_time"
+                        app:layout_constraintEnd_toEndOf="@+id/textinputlayout_autocomplete_time"
+                        app:layout_constraintStart_toStartOf="@+id/textinputlayout_autocomplete_time"
+                        app:layout_constraintTop_toTopOf="@+id/textinputlayout_autocomplete_time"></AutoCompleteTextView>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/add_urgency_container"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_type_time_container">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/futura_book"
+                    android:text="Urgent"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"></TextView>
+
+                <Switch
+                    android:id="@+id/add_urgency_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView5"
+                    app:layout_constraintTop_toTopOf="parent"></Switch>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/add_date_container"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_urgency_container">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textinputlayout_autocomplete_date_year"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="#002E343D"
+                    android:hint="Year"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toStartOf="@id/textinputlayout_autocomplete_date_month"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.3">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/element_dropdown_add_date_year"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#131313"
+                        android:fontFamily="@font/futura_book"
+                        android:inputType="none"
+                        app:layout_constraintBottom_toBottomOf="@+id/textinputlayout_autocomplete_date_day"
+                        app:layout_constraintEnd_toEndOf="@+id/textinputlayout_autocomplete_date_day"
+                        app:layout_constraintStart_toStartOf="@+id/textinputlayout_autocomplete_date_day"
+                        app:layout_constraintTop_toTopOf="@+id/textinputlayout_autocomplete_date_day"></AutoCompleteTextView>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textinputlayout_autocomplete_date_month"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:background="#002E343D"
+                    android:enabled="false"
+                    android:hint="Month"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toStartOf="@id/textinputlayout_autocomplete_date_year"
+                    app:layout_constraintStart_toEndOf="@id/textinputlayout_autocomplete_date_day"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.3">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/element_dropdown_add_date_month"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#131313"
+                        android:fontFamily="@font/futura_book"
+                        android:inputType="none"
+                        app:layout_constraintBottom_toBottomOf="@+id/textinputlayout_autocomplete_date_month"
+                        app:layout_constraintEnd_toEndOf="@+id/textinputlayout_autocomplete_date_month"
+                        app:layout_constraintStart_toStartOf="@+id/textinputlayout_autocomplete_date_month"
+                        app:layout_constraintTop_toTopOf="@+id/textinputlayout_autocomplete_date_month"></AutoCompleteTextView>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textinputlayout_autocomplete_date_day"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:background="#002E343D"
+                    android:enabled="false"
+                    android:hint="Day"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/textinputlayout_autocomplete_date_month"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.3">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/element_dropdown_add_date_day"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#131313"
+                        android:fontFamily="@font/futura_book"
+                        android:inputType="none"
+                        app:layout_constraintBottom_toBottomOf="@+id/textinputlayout_autocomplete_date_year"
+                        app:layout_constraintEnd_toEndOf="@+id/textinputlayout_autocomplete_date_year"
+                        app:layout_constraintStart_toStartOf="@+id/textinputlayout_autocomplete_date_year"
+                        app:layout_constraintTop_toTopOf="@+id/textinputlayout_autocomplete_date_year"></AutoCompleteTextView>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/add_name_desc_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="24dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/add_buttons_container"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step_view">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/futura_heavy"
+                    android:text="Name"
+                    android:textColor="@color/white"
+                    android:textSize="25dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"></TextView>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textinputlayout_edit_name"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:hintEnabled="false"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/element_name_add"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#19FFFFFF"
+                        android:fontFamily="@font/futura_book"
+                        android:hint="Insert a name"
+                        android:inputType="textCapSentences" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/futura_heavy"
+                    android:text="Insert Description"
+                    android:textColor="@color/white"
+                    android:textSize="25dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"></TextView>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textinputlayout_edit_desc"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:hintEnabled="false"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/element_desc_add"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#19FFFFFF"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/futura_book"
+                        android:hint="Insert a Description"
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:isScrollContainer="true"
+                        android:scrollbars="vertical" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/add_buttons_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/others_remove_button_container"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageButton
+                    android:id="@+id/add_prev_button"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@drawable/cancel_button"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/add_prev_button_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:fontFamily="@font/futura_book"
+                    android:gravity="center"
+                    android:text="Prev"
+                    android:textColor="#9E9E9E"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/add_prev_button"
+                    app:layout_constraintEnd_toEndOf="@+id/add_prev_button"
+                    app:layout_constraintStart_toStartOf="@+id/add_prev_button"
+                    app:layout_constraintTop_toTopOf="@+id/add_prev_button" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ViewSwitcher
+                android:id="@+id/add_next_save_buttons_switcher"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/add_next_button_container"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/add_next_button"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="@drawable/save_button"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/add_next_button_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:fontFamily="@font/futura_book"
+                        android:gravity="center"
+                        android:text="Next"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/add_next_button"
+                        app:layout_constraintEnd_toEndOf="@+id/add_next_button"
+                        app:layout_constraintStart_toStartOf="@+id/add_next_button"
+                        app:layout_constraintTop_toTopOf="@+id/add_next_button" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/add_save_button_container"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/add_save_button"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="@drawable/save_button"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/add_save_button_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:fontFamily="@font/futura_book"
+                        android:gravity="center"
+                        android:text="Save"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/add_save_button"
+                        app:layout_constraintEnd_toEndOf="@+id/add_save_button"
+                        app:layout_constraintStart_toStartOf="@+id/add_save_button"
+                        app:layout_constraintTop_toTopOf="@+id/add_save_button" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </ViewSwitcher>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

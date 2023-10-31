@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">RememberMe</string>
+    <string name="select_dropdown_add_type">Select Type</string>
+    <string name="select_dropdown_add_time">Select Time</string>
+    <string name="select_name_add">Insert Name</string>
+    <string name="select_desc_add">Insert Description</string>
+    <string name="share_now">Information</string>
+    <string name="group1">Group1</string>
+    <string name="group2">Group2</string>
+    <string name="group3">Group3</string>
+    <string name="group4">Group4</string>
+    <string name="group5">Group5</string>
+    <string name="search">Search</string>
+
+    <string-array name="group1">
+        <item>item1</item>
+    </string-array>
+
+    <string-array name="group2">
+        <item>item1</item>
+        <item>item2</item>
+    </string-array>
+
+    <string-array name="group3">
+        <item>item1</item>
+        <item>item2</item>
+        <item>item3</item>
+    </string-array>
+
+    <string-array name="group4">
+        <item>item1</item>
+        <item>item2</item>
+        <item>item3</item>
+        <item>item4</item>
+    </string-array>
+
+    <string-array name="group5">
+        <item>item1</item>
+        <item>item2</item>
+        <item>item3</item>
+        <item>item4</item>
+        <item>item5</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

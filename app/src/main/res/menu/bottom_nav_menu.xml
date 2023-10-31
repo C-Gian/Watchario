@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_main"
+        android:icon="@drawable/main_icon"
+        android:title="Main" />
+
+    <item
+        android:id="@+id/nav_searching"
+        android:icon="@drawable/search_icon"
+        android:title="Search" />
+
+    <item
+        android:id="@+id/nav_upcoming"
+        android:icon="@drawable/upcoming_icon"
+        android:title="Upcoming" />
+
+    <item
+        android:id="@+id/nav_notifications"
+        android:icon="@drawable/notifications_icon"
+        android:title="Notifications" />
+
+    <!--<item
+        android:id="@+id/nav_notifications"
+        android:icon="@drawable/notification_nav_tab_icon"
+        android:title="Notifica" />-->
+
+</menu>
